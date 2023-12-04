@@ -1,0 +1,15 @@
+
+<div fxLayout="row wrap">
+    <div class="card" *ngFor="let i of about">
+      <mat-card class="mat-card">
+        <mat-card-content>
+          <div class="i">{{ i.sentence }}</div>
+          <div class="field-name">House Name: {{ i.character.house.name }}</div>
+          <div class="field-name">House Slug: {{ i.character.house.slug }}</div>
+          <div class="field-name">Character Name: {{ i.character.name }}</div>
+          <div class="field-name">Character Slug: {{ i.character.slug }}</div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  
